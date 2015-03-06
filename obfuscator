@@ -40,6 +40,10 @@ if(dictionary[text[i]]!=undefined)
 {
 final+=dictionary[text[i]]+'+';
 }
+else if(text[i]=="\"" || text[i] =="\'")
+{
+final+="\'\"\'+";
+}
 else
 {
 final+="'"+text[i]+"'+";
