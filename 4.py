@@ -1,2 +1,2 @@
 from itertools import combinations
-max([i for i in map(lambda x:x[0]*x[1],combinations([j for j in range(100,1000)],2))if str(i)==str(i)[::-1]])
+max([i[0]*i[1]for i in combinations(range(100,1000),2)if str(i[0]*i[1])==str(i[0]*i[1])[::-1]])
